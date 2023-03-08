@@ -1,0 +1,71 @@
+@media (max-width: 735px) {
+  .chat__inner {
+    flex-direction: column-reverse;
+  }
+  .form {
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    &__input {
+      width: 310px;
+      font-size: 12px;
+    }
+    &__btn {
+      margin-top: 10px;
+      width: 150px;
+      font-size: 12px;
+      margin-left: 0px;
+    }
+  }
+
+  .form .form__btn:nth-child(2) {
+    margin-right: 10px;
+  }
+
+  .field {
+    width: 310px;
+    &-text {
+      padding-top: 5px;
+    }
+    &-client {
+      width: 125px;
+      min-height: 35px;
+      margin-left: 155px;
+      font-size: 12px;
+    }
+    &-server {
+      width: 125px;
+      min-height: 35px;
+      margin-right: 155px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 364px) {
+  .form {
+    width: 270px;
+    &__input {
+      width: 270px;
+      font-size: 12px;
+    }
+    &__btn {
+      width: 130px;
+      font-size: 11px;
+    }
+  }
+
+  .field {
+    width: 270px;
+    &-client {
+      min-height: 30px;
+      font-size: 11px;
+      margin-left: 115px;
+    }
+    &-server {
+      min-height: 30px;
+      font-size: 11px;
+      margin-right: 115px;
+    }
+  }
+}
