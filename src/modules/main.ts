@@ -28,7 +28,8 @@ function writeToScreenServer(message: string) {
   }
 }
 
-btnSend?.addEventListener("click", () => {
+btnSend?.addEventListener("click", (event: MouseEvent) => {
+  event.preventDefault();
   websocket = new WebSocket(wsUrl);
 
   websocket.onopen = function() {
@@ -43,6 +44,7 @@ btnSend?.addEventListener("click", () => {
       writeToScreenClient(message);
       if (websocket) {
         websocket.send(message);
+        inputNode.value = "";
       }
     }
     
@@ -99,7 +101,8 @@ const successGeolocation = (position: GeolocationPosition): void => {
   writeClientGeoLink("Geo-location");
 };
 
-btnGeolocation?.addEventListener("click", () => {
+btnGeolocation?.addEventListener("click", (event: MouseEvent) => {
+  event.preventDefault();
   latitude = null;
   longitude = null;
   preClientLink = null;
