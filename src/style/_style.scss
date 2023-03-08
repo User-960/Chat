@@ -15,16 +15,18 @@
     outline-color: $color-blue;
     outline-width: 2px;
     background-color: $color-white;
-    font-size: 16px;
+    font-size: 14px;
   }
   &__btn {
     width: 120px;
     height: 40px;
     margin-left: 10px;
     padding: 5px 5px;
+    font-size: 14px;
     box-shadow: $box-shadow;
     background-color: $color-blue-light;
     border: 5px solid $color-blue-light;
+    transition: 0.3s;
   }
   &__btn:hover {
     color: $color-grey;

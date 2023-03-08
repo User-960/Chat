@@ -20,7 +20,7 @@
     "overrides": [
     ],
     "rules": {
-      "no-console": "off", // rule disallows calls or assignments to methods of the console object
+      "no-console": "error", // rule disallows calls or assignments to methods of the console object
       "no-debugger": "error", // disallow the use of debugger
       "max-len": ["error", { "code": 120 }], // enforce a maximum line length
       "no-useless-concat": "off", // rule aims to flag the concatenation of 2 literals when they could be combined into a single literal
@@ -45,6 +45,7 @@
       "@typescript-eslint/indent": ["off", "2"], // enforces a consistent indentation style
       "@typescript-eslint/no-unused-vars": "error", // disallow unused variables
       "@typescript-eslint/no-empty-function": "off", // disallow empty functions
-      "@typescript-eslint/no-inferrable-types": "off" // disallow explicit type declarations for variables or parameters
+      "@typescript-eslint/no-inferrable-types": "off", // disallow explicit type declarations for variables or parameters
+      "@typescript-eslint/no-explicit-any": "off" // disallow the any type.
     }
 }
